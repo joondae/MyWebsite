@@ -1,0 +1,155 @@
+body {
+  background: rgb(30, 100, 150);
+  color: black;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: pink;
+  padding: 20px;
+}
+
+section {
+  background: white;
+  color: gray;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#p1 {
+  color: pink;
+  max-width: 150px;
+  margin: auto;
+}
+
+#p2 {
+  color: green;
+  max-width: 150px;
+  margin: auto;
+}
+
+#black {
+  color: black;
+}
+
+#blue {
+  color: blue;
+}
+
+#purple {
+  color: purple;
+}
+
+#tomato {
+  color: tomato;
+}
+
+#magenta {
+  color: magenta;
+}
+
+#teal {
+  color: teal;
+}
+
+#cyan {
+  color: cyan;
+}
+
+#yellow {
+  color: yellow;
+}
+
+.city {
+  background-color: tomato;
+  color: white;
+  border: 2px solid black;
+  margin: auto;
+  padding: 20px;
+}
+
+.ascii {
+  color: white;
+  margin: auto;
+  padding: 2px;
+  margin: 3px;
+  border-radius: 2px;
+  border: 1px solid #ffdd7c;
+  float: left;
+  clear: left;
+}
+
+.brown {
+  background-color: brown;
+  color: white;
+}
+
+.blue {
+  background-color: blue;
+  color: white;
+}
+
+.orange {
+  background-color: orange;
+  color: white;
+}
+
+.violet {
+  background-color: violet;
+  color: white;
+}
+
+.turquoise {
+  background-color: turquoise;
+  color: white;
+}
+
+.gold {
+  background-color: gold;
+  color: white;
+}
+
+.silver {
+  background-color: silver;
+  color: white;
+}
+
+.purple {
+  background-color: purple;
+  color: white;
+}
+
+footer {
+  background: black;
+  padding: 10px 20px;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: purple;
+}
+
+a:active {
+  color: blue;
+}
