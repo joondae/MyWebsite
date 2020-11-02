@@ -6,6 +6,19 @@ body {
   padding: 0;
 }
 
+/*
+useful for centering stuff (make 1 element static, the rest auto margin)
+
+body {
+    padding-bottom: 10px;
+    width: 800px;
+    margin: 0px auto;
+    max-height: 90%;
+    background-color: powderblue;
+    border: 1px solid black;
+  } 
+*/
+
 header {
   background: pink;
   padding: 20px;

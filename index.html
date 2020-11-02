@@ -6,7 +6,14 @@
   <link rel="stylesheet" href="css/style1.css">
   <!--
   Head loads 1st before rest of body content
-  If have scripts, will load them here
+  If have scripts, should load them here
+  Any computer have only make 5 web server requests at once
+    Where performance becomes an issue (fast loading website)
+      Sometimes would want to combine the code for fast server requests into 1
+      Or separate slow server requests into multiple quick ones
+
+  Should NOT try to reload entire html page every time
+    Should dynamically load page content
   -->
 </head>
 
@@ -16,7 +23,6 @@
   Div, table, & style are the most common/impt tags
   Classes & id's are used to apply prewritten code to content
     Id becomes a variable for specific html element
-
   -->
 
 
