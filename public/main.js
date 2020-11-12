@@ -12,6 +12,8 @@ function undoDisappearingAct() {
   $("#p1").html("poof");
 };
 
+//location.href = "rickroll url here";
+
 //Events
 //$(idName) has same functionality as document.getElementById but has more features
 $("#p1").click(changeSomeHtml);
