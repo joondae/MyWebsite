@@ -1,3 +1,4 @@
+//Functions
 //function syntax: function functionName () {}
 function goToGameContent() {
   console.log("TESTING");
@@ -9,21 +10,12 @@ function unloadContent() {
 }
 
 function changeSomeHtml() {
-  //very common for all websites
   $("#p1").html("DOUBLE CLICK FOR DISAPPEARING ACT");
 };
 
 function undoDisappearingAct() {
   $("#p1").html("poof");
 };
-
-function populatePlaceContent(content) {
-
-}
-
-function loadContent() {
-  $.ajax({ url: "pages/game.html", success: populatePlaceContent})
-}
 
 //location.href = "rickroll url here";
 

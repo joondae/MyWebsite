@@ -1,54 +1,125 @@
-header {
-  font-family: Arial;
-}
-
-body {
-  background: black;
-  color: rgb(255,20,147);
-  font-family: Arial;
+html, body {
+  background-color: white;
+  color: black; /* hotpink: rgb(255,20,147) */
+  font-family: "Courier New";
   margin: 0;
   padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
-ul li {
-  list-style: none;
-  display: inline;
-  font-size: 150%;
-  margin: 0px 100px 0px 0px;
+img {
+  width: 100%;
+  height: 100%;
 }
 
 h1 {
-  margin: 40px 0px 0px 40px;
+  margin-top: 40px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 40px;
 }
 
-/*
-useful for centering stuff (make 1 element static, the rest auto margin)
+ul li {
+  display: inline-block;
+  font-size: 1.75em;
+  font-weight: bold;
+}
 
-body {
-    padding-bottom: 10px;
-    width: 800px;
-    margin: 0px auto;
-    max-height: 90%;
-    background-color: powderblue;
-    border: 1px solid black;
-  } 
-*/
+p {
+  font-size: 100%;
+  text-align: center;
+}
+
+a:link, a:visited, a:active {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-decoration-color: rgb(255,20,147);
+}
 
 /*
 id's are underscore delimited
 */
+#hobby_padding {
+  padding-left: 40px;
+  padding-right: 20px;
+}
+
+#contact_padding {
+  padding-right: 40px;
+  padding-left: 20px;
+}
+
 #p1 {
   color: rgb(255,20,147);
-  max-width: 150px;
-  margin: auto;
+}
+
+#github_repo_link {
+  font-size: 25px;
+  color: rgb(127,255,0);
+  text-decoration-color: black;
 }
 
 /*
 classes are hyphen delimited
 */
+
+/*Play around with this - maybe use it*/
+.header-background {
+  background-color: rgba(216,216,216,0.6);
+  width: 100%;
+  height: 110px;
+}
+
+.menu-bar-formatting {
+
+}
+
+.current-page-formatting {
+  position: absolute;
+  display: inline-block;
+  top: 5%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+}
+
+.menu-links-formatting {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.top-left-text {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+
+.bottom-left-text {
+  position: absolute;
+  bottom: 10%;
+  left: 6%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
 .centered-upper-text {
   position: absolute;
   top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered-lower-text {
+  position: absolute;
+  bottom: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -60,41 +131,9 @@ classes are hyphen delimited
   transform: translate(-50%, -50%);
 }
 
-.imgbox {
-  display: grid;
-}
-
 .center-fit {
   width: 100%;
   height: 1000px;
   margin: auto;
   opacity: 1.0;
-  z-index: -1;
-}
-
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
-a:link {
-  text-decoration: none;
-  color: rgb(255,20,147);
-}
-
-a:visited {
-  color: rgb(255,20,147);
-  text-decoration: underline;
-  text-decoration-color: purple;
-}
-
-a:hover {
-  text-decoration-color: white;
-  text-decoration: underline;
-}
-
-a:active {
-  color: rgb(255,20,147);
-  text-decoration: none;
 }

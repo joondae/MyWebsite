@@ -1,11 +1,11 @@
 //Functions
 /*
 function loadGameContent() {
-  $.ajax({url: "pages/gameWindow.html", success: loadContent(result)});
+  $.ajax({url: "gameWindow.html", success: loadContent(result)});
 }
 
 function loadContent(result) {
-  $("game_content").html(result);
+  $("#game_content").html(result);
 }
 */
 
@@ -22,8 +22,9 @@ alert("Game Content Loaded");
 
 $('#remove_game').click(function() {
   console.log("TESTTEST");
-  $('#game_content').html('');
+  //there's probably a more efficient way to do this
+  location.href = "game.html";
 })
 
 //Events
-//$("game_button_game_page").click(loadGameContent)
+//$("#game_button_game_page").click(loadGameContent)
