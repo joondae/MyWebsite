@@ -104,14 +104,14 @@ classes are hyphen delimited
 .bottom-left-text {
   position: absolute;
   bottom: 10%;
-  left: 6%;
+  left: 125px;
   transform: translate(-50%, -50%);
   text-align: left;
 }
 
 .centered-upper-text {
   position: absolute;
-  top: 25%;
+  top: 300px;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
