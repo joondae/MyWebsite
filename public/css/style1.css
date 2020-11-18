@@ -58,6 +58,10 @@ id's are underscore delimited
   color: rgb(255,20,147);
 }
 
+#latin_phrase {
+  color: black;
+}
+
 #github_repo_link {
   font-size: 25px;
   color: rgb(127,255,0);
