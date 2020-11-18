@@ -62,6 +62,10 @@ id's are underscore delimited
   color: black;
 }
 
+#color_hotpink {
+  color: rgb(255,20,147);
+}
+
 #github_repo_link {
   font-size: 25px;
   color: rgb(127,255,0);
