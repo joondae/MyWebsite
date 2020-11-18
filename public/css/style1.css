@@ -1,9 +1,24 @@
+header {
+  font-family: Arial;
+}
+
 body {
-  background: white;
-  color: black;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  background: black;
+  color: rgb(255,20,147);
+  font-family: Arial;
   margin: 0;
   padding: 0;
+}
+
+ul li {
+  list-style: none;
+  display: inline;
+  font-size: 150%;
+  margin: 0px 100px 0px 0px;
+}
+
+h1 {
+  margin: 40px 0px 0px 40px;
 }
 
 /*
@@ -19,156 +34,67 @@ body {
   } 
 */
 
-header {
-  background: white;
-  padding: 20px;
-}
-
-section {
-  background: white;
-  color: gray;
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
 /*
 id's are underscore delimited
 */
 #p1 {
-  color: pink;
+  color: rgb(255,20,147);
   max-width: 150px;
   margin: auto;
-}
-
-#p2 {
-  color: green;
-  max-width: 150px;
-  margin: auto;
-}
-
-#black {
-  color: black;
-}
-
-#blue {
-  color: blue;
-}
-
-#purple {
-  color: purple;
-}
-
-#tomato {
-  color: tomato;
-}
-
-#magenta {
-  color: magenta;
-}
-
-#teal {
-  color: teal;
-}
-
-#cyan {
-  color: cyan;
-}
-
-#yellow {
-  color: yellow;
 }
 
 /*
 classes are hyphen delimited
 */
-.city {
-  background-color: tomato;
-  color: white;
-  border: 2px solid black;
+.centered-upper-text {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.imgbox {
+  display: grid;
+}
+
+.center-fit {
+  width: 100%;
+  height: 1000px;
   margin: auto;
-  padding: 20px;
+  opacity: 1.0;
+  z-index: -1;
 }
 
-.ascii {
-  color: white;
-  margin: auto;
-  padding: 2px;
-  margin: 3px;
-  border-radius: 2px;
-  border: 1px solid #ffdd7c;
-  float: left;
-  clear: left;
-}
-
-.brown {
-  background-color: brown;
-  color: white;
-}
-
-.blue {
-  background-color: blue;
-  color: white;
-}
-
-.orange {
-  background-color: orange;
-  color: white;
-}
-
-.violet {
-  background-color: violet;
-  color: white;
-}
-
-.turquoise {
-  background-color: turquoise;
-  color: white;
-}
-
-.gold {
-  background-color: gold;
-  color: white;
-}
-
-.silver {
-  background-color: silver;
-  color: white;
-}
-
-.purple {
-  background-color: purple;
-  color: white;
-}
-
-footer {
-  background: black;
-  padding: 10px 20px;
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 a:link {
-  color: black;
+  text-decoration: none;
+  color: rgb(255,20,147);
 }
 
 a:visited {
-  color: black;
+  color: rgb(255,20,147);
+  text-decoration: underline;
+  text-decoration-color: purple;
 }
 
 a:hover {
-  color: purple;
+  text-decoration-color: white;
+  text-decoration: underline;
 }
 
 a:active {
-  color: blue;
+  color: rgb(255,20,147);
+  text-decoration: none;
 }

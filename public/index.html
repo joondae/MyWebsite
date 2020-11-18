@@ -2,8 +2,7 @@
 <html>
 
 <head>
-  <title>home</title>
-  <button>Side bar</button>
+  <title>Home</title>
   <link rel="stylesheet" href="css/style1.css">
   <!--
   Head loads 1st before rest of body content
@@ -26,23 +25,32 @@
     Id becomes a variable for specific html element
   -->
 
-<h1>Home</h1>
-
-  <header>
+  <header class="flex">
+    <!--
+    remember to put in side bar?
+    -->
+    <h1>Home</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="pages/hobby.html">Hobby</a></li>
         <li><a href="pages/contact.html">Contact</a></li>
+        <li><a href="pages/game.html">Game</a></li>
       </ul>
     </nav>
   </header>
 
+  <div class="imgbox">
+    <img class="center-fit" src='https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/e7d2bd61228185.5a67a07360e75.gif' alt="Background Image">
+  </div>
 
-  <A HREF="http://www.google.com/">Google Search Engine</A>
-  <A HREF="http://www.youtube.com/">Youtube</A>
-  <p id="p1">This is a paragraph. Choosing placing for content. Click for event.</p>
-  <p id="cyan"><em>This is a paragraph. Testing placed content at this location</em></p>
+  <div class="centered-upper-text">
+    <p id="p1">This is a paragraph. Choosing placing for content. Click for event.</p>
+  </div>
+
+  <div class="centered-text">
+    <button onclick="goToGameContent()">Play a Game</button>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
   <script src="main.js"></script>
