@@ -1,6 +1,7 @@
 html, body {
   background-color: white;
-  color: black; /* hotpink: rgb(255,20,147) */
+  color: black;
+  /* hotpink: rgb(255,20,147) */
   font-family: "Courier New";
   margin: 0;
   padding: 0;
@@ -38,7 +39,7 @@ a:link, a:visited, a:active {
 
 a:hover {
   text-decoration: underline;
-  text-decoration-color: rgb(255,20,147);
+  text-decoration-color: rgb(255, 20, 147);
 }
 
 /*
@@ -55,37 +56,48 @@ id's are underscore delimited
 }
 
 #p1 {
-  color: rgb(255,20,147);
+  color: rgb(255, 20, 147);
 }
 
 #latin_phrase {
   color: black;
 }
 
-#color_hotpink {
-  color: rgb(255,20,147);
+#website_repo_link {
+  color: rgb(255, 20, 147);
+}
+
+#tech_spec_link {
+  color: rgb(255, 20, 147);
 }
 
 #github_repo_link {
   font-size: 25px;
-  color: rgb(127,255,0);
+  color: rgb(127, 255, 0);
   text-decoration-color: black;
+}
+
+/* for dark light button */
+#button {
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 22px;
+  cursor: pointer;
 }
 
 /*
 classes are hyphen delimited
 */
-
 /*Play around with this - maybe use it*/
 .header-background {
-  background-color: rgba(216,216,216,0.6);
+  background-color: rgba(216, 216, 216, 0.6);
   width: 100%;
   height: 110px;
 }
 
-.menu-bar-formatting {
-
-}
+.menu-bar-formatting {}
 
 .current-page-formatting {
   position: absolute;
@@ -144,4 +156,23 @@ classes are hyphen delimited
   height: 1000px;
   margin: auto;
   opacity: 1.0;
+}
+
+.bottom-social-links {
+  position: absolute;
+  top: 650px;
+  text-align: center;
+  margin: auto;
+  background-color: rgb(255, 192, 203, 0.2);
+  width: 100%;
+  height: 139px;
+}
+
+.social-button {
+  background: transparent;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 26px;
+  cursor: pointer;
 }

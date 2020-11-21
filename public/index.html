@@ -1,13 +1,15 @@
 <!DOCTYPE HTML>
 <html>
 
-  <head>
-    <title>Home</title>
-    <link rel="stylesheet" href="css/style1.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+<head>
+  <title>Home</title>
+  <link rel="stylesheet" href="css/style1.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
 
-    <!--
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+
+  <!--
     Head loads 1st before rest of body content
     If have scripts, should load them here
     Any computer have only make 5 web server requests at once
@@ -18,54 +20,71 @@
     Should NOT try to reload entire html page every time
       Should dynamically load page content
     -->
-  </head>
+</head>
 
-  <body>
-    <!--
+<body>
+  <!--
     Where rest of HTML content goes
     Div, table, & style are the most common/impt tags
     Classes & id's are used to apply prewritten code to content
       Id becomes a variable for specific html element
     -->
 
-    <!-- use header tag??? -->
+  <!-- use header tag??? -->
 
-    <!-- put in side bar? -->
+  <!-- put in side bar? -->
 
 
-    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/e7d2bd61228185.5a67a07360e75.gif" alt="Background Image">
+  <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/e7d2bd61228185.5a67a07360e75.gif" alt="Background Image" id="Background">
 
-<!--
+  <!--
     <div class="current-page-formatting">
      <h1>Home</h1>
     </div>
  -->
 
-    <div class="menu-links-formatting">
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li><li id="hobby_padding"><a href="pages/hobby.html">Hobby</a></li><li id="contact_padding"><a href="pages/contact.html">Contact</a></li><li><a href="pages/game.html">Game</a></li>
-        </ul>
-      </nav>
-    </div>
+  <div class="menu-links-formatting">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li id="hobby_padding"><a href="pages/hobby.html">Hobby</a></li>
+        <li id="contact_padding"><a href="pages/contact.html">Contact</a></li>
+        <li><a href="pages/game.html">Game</a></li>
+        <li><button id="button"><i class="far fa-sun"> </i></button>
+      </ul>
+    </nav>
+  </div>
 
-    <div class="centered-upper-text">
-      <p id="p1">Lorem ipsum dolor sit amet, eos eu rationibus omittantur, saepe deleniti perpetua mea ei, vix cu autem apeirian torquatos. Timeam contentiones delicatissimi vis id, ei unum epicuri definiebas cum, dicat exerci mediocritatem an duo. No augue oporteat vim, mundi tollit in eos. Eam detraxit convenire ne, eum apeirian iudicabit voluptatum an, nec et scripta probatus. His ubique tritani eu, an facer vivendo nam, vim inani dicam sadipscing cu. Vel illud putent denique at, omnium oblique dolorum et mei. Click for event.</p>
+  <div class="centered-upper-text">
+    <p id="p1">Lorem ipsum dolor sit amet, eos eu rationibus omittantur, saepe deleniti perpetua mea ei, vix cu autem apeirian torquatos. Timeam contentiones delicatissimi vis id, ei unum epicuri definiebas cum, dicat exerci mediocritatem an duo. No
+      augue oporteat vim, mundi tollit in eos. Eam detraxit convenire ne, eum apeirian iudicabit voluptatum an, nec et scripta probatus. His ubique tritani eu, an facer vivendo nam, vim inani dicam sadipscing cu. Vel illud putent denique at, omnium
+      oblique dolorum et mei. Click for event.</p>
 
-      <p id="latin_phrase"><br><br>vincit qui se vincit.</p>
+    <p id="latin_phrase"><br><br>vincit qui se vincit.</p>
 
-      <a id="color_hotpink" href="https://github.com/joondae/MyWebsite">This Website's Repo |</a>
+    <a id="website_repo_link" href="https://github.com/joondae/MyWebsite">This Website's Repo |</a>
 
-      <a id="color_hotpink" href="https://docs.google.com/document/d/1u-JnhQ1nGSO2weFxmMjcciDPOf8zoJfQuIO3xmjR2bI/edit">Tech Spec</a>
+    <a id="tech_spec_link" href="https://docs.google.com/document/d/1u-JnhQ1nGSO2weFxmMjcciDPOf8zoJfQuIO3xmjR2bI/edit">Tech Spec</a>
 
-      <a id="github_repo_link" href="https://github.com/joondae?tab=repositories"><br>Github repo</a>
+    <a id="github_repo_link" href="https://github.com/joondae?tab=repositories"><br>Github repo</a>
 
-      <p></p>
+    <p></p>
 
-      <button onclick="goToGameContent()">Play a Game</button>
-    </div>
+    <button onclick="goToGameContent()">Play a Game</button>
+  </div>
 
+  <div class="bottom-social-links" id="social-links">
+    <ul>
+      <li><button id="instagram" class="social-button"><i class="fab fa-instagram"></i></button></li>
+      <li><button id="facebook" class="social-button"><i class="fab fa-facebook"></i></button></li>
+      <li><button id="github" class="social-button"><i class="fab fa-github"></i></button></li>
+      <li><button id="linkedin" class="social-button"><i class="fab fa-linkedin"></i></button></li>
+    </ul>
+    <p id="filler">hello max this is ur filler text... copyright dibs or whatever</p>
+  </div>
 
-  </body>
+</body>
+
+<script src="main.js"></script>
 
 </html>
