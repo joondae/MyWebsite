@@ -112,7 +112,7 @@ classes are hyphen delimited
 .bottom-left-text {
   position: absolute;
   bottom: 10%;
-  left: 125px;
+  left: 135px;
   transform: translate(-50%, -50%);
   text-align: left;
 }
@@ -144,4 +144,11 @@ classes are hyphen delimited
   height: 1000px;
   margin: auto;
   opacity: 1.0;
+}
+
+.hobby-left-text {
+  position: absolute;
+  left: 116px;
+  transform: translate(-50%, -50%);
+  text-align: left;
 }
