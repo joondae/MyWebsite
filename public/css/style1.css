@@ -58,6 +58,10 @@ id's are underscore delimited
   color: rgb(255,20,147);
 }
 
+#p2 {
+  color: rgb(245,197,66);
+}
+
 #latin_phrase {
   color: black;
 }
@@ -128,7 +132,7 @@ classes are hyphen delimited
   top: 650px;
   text-align: center;
   margin: auto;
-  background-color: rgb(255,192,203,0.2);
+  background-color: rgba(255,192,203,0.2);
   width: 100%;
   height: 139px;
 }
