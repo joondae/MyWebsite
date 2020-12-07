@@ -112,6 +112,8 @@ classes are hyphen delimited
 }
 
 .menu-links-formatting {
+  padding-top: 100px;
+  padding-bottom: 100px;
   position: absolute;
   top: 80px;
   left: 50%;
@@ -154,7 +156,7 @@ classes are hyphen delimited
 
 .centered-upper-text {
   position: absolute;
-  top: 300px;
+  top: 350px;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
