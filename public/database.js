@@ -1,9 +1,9 @@
 //firestore will automatically create the collection & document for you instead of having to manually make it on the backend
 
-const chocolateInput = $("#chocolate_input");
-const latestChocolateVote = $("#latest_vote");
-const voteOnChocolate = $("#vote_chocolate");
-const chocolateOutput = $("#chocolate_output");
+const guitarVoteInput = $("#guitar_vote_input");
+const latestFavoriteGuitarVote = $("#latest_vote");
+const voteOnFavoriteGuitar = $("#guitar_vote_button");
+const guitarVoteOutput = $("#guitar_vote_output");
 
 //checks to make sure all firestore configs are correct
 var firestore = firebase.firestore();
@@ -20,11 +20,11 @@ function generalErrorHandler(errer) {
     console.log("Got an error", error);
 };
 
-function submitChocolateVote() {
-    console.log('submitting chocolate vote: ' + chocolateInput.val());
+function submitFavoriteGuitarVote() {
+    console.log('submitting favorite guitar vote: ' + guitarVoteInput.val());
     databaseDocumentRef.set(
       {
-          latestRating : chocolateInput.val(),
+          latestRating : guitarVoteInput.val(),
           exampleData: 1
       }
     ).then(voteSuccess).catch(generalErrorHandler); //using dot notation to execute more functions right after you run a function
@@ -32,24 +32,27 @@ function submitChocolateVote() {
 
 
 
-voteOnChocolate.click(submitChocolateVote); 
+voteOnFavoriteGuitar.click(submitFavoriteGuitarVote); 
 
-function getChocolateVoteDocument(doc) {
+function getFavoriteGuitarVoteDocument(doc) {
   if(doc && doc.exists) {
     var myData = doc.data();
-    chocolateOutput.html(myData.latestRating);
+    guitarVoteOutput.html(myData.latestRating);
   }
 }
 
 function getLatestVote() {
   //.then will return result from previously called function
-  databaseDocumentRef.get().then(getChocolateVoteDocument).catch(generalErrorHandler);
+  databaseDocumentRef.get().then(getFavoriteGuitarVoteDocument).catch(generalErrorHandler);
 }
 
-latestChocolateVote.click(getLatestVote);
+latestFavoriteGuitarVote.click(getLatestVote);
 
+//uncomment if you want latest vote to update automatically w/o user having to click "Get Latest Vote" button
+/*
 function getRealTimeUpdate() {
-  databaseDocumentRef.onSnapshot(getChocolateVoteDocument)
+  databaseDocumentRef.onSnapshot(getFavoriteGuitarVoteDocument)
 }
 
 getRealTimeUpdate();
+*/
