@@ -1,13 +1,14 @@
 //Website Visit Counter
+var cookie = document.cookie;
+if(!cookie) {
+  cookie = 1;
+} else {
+  cookie++;
+}
+document.cookie = cookie;
+$(".visitCounter").html("Visit Count: " + cookie);
 function websiteVisitCounter() {
-  var cookie = document.cookie;
-  if(!cookie) {
-    cookie = 1;
-  } else {
-    cookie++;
-  }
-  document.cookie = cookie;
-  $(".visitCounter").html("Visit Count: " + cookie);
+
 }
 
 //Functions
@@ -112,7 +113,7 @@ function unloadContent() {
 
 //Events
 //$(idName) has same functionality as document.getElementById but has more features
-$(document).ready(websiteVisitCounter);
+websiteVisitCounter();
 $("#button").click(changeBackground);
 $("#instagram_button").click(goToInstagram);
 $("#facebook_button").click(goToFacebook);
