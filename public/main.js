@@ -1,14 +1,14 @@
 //Website Visit Counter
-var cookie = document.cookie;
-if(!cookie) {
-  cookie = 1;
-} else {
-  cookie++;
-}
-document.cookie = cookie;
-$(".visitCounter").html("Visit Count: " + cookie);
+//try and split by semicolon then parse the cookie for the visit integer value
 function websiteVisitCounter() {
-
+  var cookie = document.cookie;
+  if(!cookie) {
+    cookie = 1;
+  } else {
+    cookie++;
+  }
+  document.cookie = cookie;
+  $(".visitCounter").html("Visit Count: " + cookie);
 }
 
 //Functions
@@ -29,7 +29,7 @@ function changeBackground() {
     document.getElementById("p2").style.color = "#F0B30C"
 
     //change dark/light mode button icon (Jasmine could add the moon but couldn't remove the sun)
-    //document.getElementById("button").removeClas("far fa-sun").addClass("fas fa-moon-stars");
+    //document.getElementById("button").removeClass("far fa-sun").addClass("fas fa-moon-stars");
     //document.getElementById("button").html("<button id="button"><i class="fas fa-moon-stars"></i></button>")
 
     //change favicon
